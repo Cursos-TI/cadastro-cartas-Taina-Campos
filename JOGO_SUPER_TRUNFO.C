@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    // Declaração de variáveis para armazenar os dados das cartas
+    // Armazena os dados das cartas dos jogadores
     char estado1, estado2;
     char codigo1[5], codigo2[5];
     char cidade1[50], cidade2[50];
@@ -12,11 +12,11 @@ int main() {
     // Entrada de dados para a primeira carta
     printf("Digite os dados da primeira carta:\n");
     printf("Estado (letra de A a H): ");
-    scanf(" %c", &estado1);  // Espaço antes de %c para capturar corretamente o caractere
+    scanf(" %c", &estado1);  
     printf("Código da Carta (ex: A01): ");
     scanf("%s", codigo1);
     printf("Nome da Cidade: ");
-    scanf(" %[^\n]s", cidade1);  // Lê uma linha com espaços
+    scanf(" %[^\n]s", cidade1);
     printf("População: ");
     scanf("%d", &populacao1);
     printf("Área (em km²): ");
@@ -29,11 +29,11 @@ int main() {
     // Entrada de dados para a segunda carta
     printf("\nDigite os dados da segunda carta:\n");
     printf("Estado (letra de A a H): ");
-    scanf(" %c", &estado2);  // Espaço antes de %c para capturar corretamente o caractere
+    scanf(" %c", &estado2); 
     printf("Código da Carta (ex: B03): ");
     scanf("%s", codigo2);
     printf("Nome da Cidade: ");
-    scanf(" %[^\n]s", cidade2);  // Lê uma linha com espaços
+    scanf(" %[^\n]s", cidade2);
     printf("População: ");
     scanf("%d", &populacao2);
     printf("Área (em km²): ");
@@ -63,4 +63,5 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pontos2);
 
     return 0;
+
 }
